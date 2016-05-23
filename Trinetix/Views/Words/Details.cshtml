@@ -1,0 +1,50 @@
+﻿@model Trinetix.Words
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Words</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Files.FileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Files.FileName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WordName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WordName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WordPositionCol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WordPositionCol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WordPositionRow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WordPositionRow)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WordID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

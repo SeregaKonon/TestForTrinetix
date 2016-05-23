@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@using (Html.BeginForm("Index","UploadFiles",FormMethod.Post))
+{
+  @:Type Path of folder : @Html.TextBox("folder")
+
+  <input type="submit" value="Submit"/>
+}
